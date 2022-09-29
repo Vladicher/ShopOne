@@ -1,0 +1,12 @@
+﻿@model HomeViewModels
+<h1>Лучшие автомобили</h1>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Car car in Model.favCar)
+        {
+            @Html.Partial("AllCar", car)
+        }
+
+    }
+</div>

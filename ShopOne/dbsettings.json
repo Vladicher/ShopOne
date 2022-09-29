@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnections": "Server=(localdb)\\MSSQLLocalDB;Database=ShopOne;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}

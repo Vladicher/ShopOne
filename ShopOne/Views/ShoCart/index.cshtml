@@ -1,0 +1,13 @@
+﻿@model ShoCartNewModuls
+<div class="container">
+    @foreach (var el in Model.shoCart.listShopItems)
+    {
+        <div class="alert alert-warning mt-3">
+        <p >Автомобиль:</p>@el.car.name<br />
+        <p>Цена:</p>@el.car.price.ToString("c")
+        </div>
+    }
+    <hr/>
+    <a class="btn btn-danger" asp-controller="Order" asp-action = "CheckOut">Оплатить</a>
+</div>
+
